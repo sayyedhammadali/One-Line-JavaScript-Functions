@@ -1,5 +1,4 @@
 (function($) {
-  console.log('main.es6.js...');
 
   // Algo 1: Armchair Algorithms 0.0.1
   // Given an array of positive number inputs, design an algorithm that returns
@@ -9,7 +8,7 @@
   // eg. [3, 5, 9, 2] should return [90, 54, 30, 135]
   //
   // source: https://codeburst.io/armchair-algorithms-0-0-1-97b49a9060ab
-  function algo1() {
+  function armchair1() {
     /* solution here... */
   }
 
@@ -20,10 +19,30 @@
   //
   // source: https://codeburst.io/armchair-algorithms-0-0-2-9b18e7601b91
 
-  function algo2() {
+  function armchair2() {
     /* solution here... */
   }
 
+  // Algo 3: Two Sum
+  // Given an array of integers, return indices of the two numbers such that they add up
+  // to a specific target. You may assume that each input would have exactly one solution,
+  // and you may not use the same element twice.
+  //
+  // e.g. Given nums = [11, 15, 2, 7], target = 9,
+  // Because nums[0] + nums[1] = 2 + 7 = 9,
+  // return [2, 3].
+  //
+  // source: leetcode
 
+  const twoSum = function(nums, target) {
+    let exist = {};
+    for(let i = 0; i < nums.length; i++) {
+      if (typeof (exist[target - nums[i]]) !== 'undefined') {
+        return [i, exist[target - nums[i]]];
+      }
+      exist[nums[i]] = i;
+    }
+  }
+  // console.log('->', twoSum([11, 15, 2, 7], 9));
 
 })(jQuery);
