@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,eAEI,YAAY,AACZ,WAAW,AACX,iBAAkB,CACnB","file":"main.css","sourcesContent":[".liner-1 {\n  input {\n    border: none;\n    width: 32px;\n    text-align: center;\n  }\n}\n"]}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,WACE,UAAU,AACV,iBAAiB,AACjB,aAAc,CACf","file":"main.css","sourcesContent":[".container {\n  width: 80%;\n  max-width: 1024px;\n  margin: 0 auto;\n}\n"]}
