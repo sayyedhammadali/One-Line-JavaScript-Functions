@@ -51,10 +51,7 @@ const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random());
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 // 18.
-const getParameters = (URL) => {
-    URL = JSON.parse('{"' + decodeURI(URL.split("?")[1]).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') +'"}');
-    return JSON.stringify(URL);
-};
+const getParameters = (URL) => JSON.parse('{"' + decodeURI(URL.split("?")[1]).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') +'"}');
 
 // 19.
 const average = arr => arr.reduce((a, b) => a + b) / arr.length;
